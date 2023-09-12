@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/permission_img"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F1FF"
+    tools:context=".PermissionActivity">
+
+    <TextView
+        android:id="@+id/permission_title"
+        android:layout_width="220dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="@dimen/_54sdp"
+        android:layout_marginTop="92dp"
+        android:text="@string/permission"
+        android:textColor="@color/permissiontext"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="254dp"
+        android:layout_height="348dp"
+        android:layout_marginStart="@dimen/_42sdp"
+        android:layout_marginTop="@dimen/_135sdp"
+        android:background="@drawable/ic_persission_img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/permissionbutn"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="107dp"
+        android:background="@drawable/permissionbutton"
+        android:text="@string/allowpermission"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_goneMarginTop="@dimen/_60sdp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/notallow"
+        android:layout_width="74dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="@dimen/_90sdp"
+        android:text="@string/notpermission"
+        android:textColor="@color/notallowtext"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.231"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/permissionbutn"
+        app:layout_constraintVertical_bias="0.483"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
